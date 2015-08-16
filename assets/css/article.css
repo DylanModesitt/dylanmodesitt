@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
+
+/* Designed by Dylan Modesitt in Atherton, California*/
+
+/* Global Styles */
+
+body, html {
+	height:100%;
+}
+.article {
+	background:#f2f2f2;
+}
+h1,h2,h3,h4,h5,h6 {
+	
+}
+.articleTitle {
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	margin: 5px 0 5px;
+	font-size:24px;
+}
+.articleSample {
+	margin: 20px 0;
+}
+.articlesHeader {
+	margin-top:20px;
+}
+pre{
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  margin-bottom: 10px;
+  overflow: auto;
+  width: auto;
+  padding: 5px;
+  background-color: #eee;
+  width: 650px!ie7;
+  padding-bottom: 20px!ie7;
+  max-height: 600px;
+}
+i.social { 
+    font-family:FontAwesome!important; 
+    font-size:32px;
+    margin: 0 20px 50px 20px;
+
+}
+
