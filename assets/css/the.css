@@ -1,0 +1,173 @@
+
+/* Properties */
+
+:root {
+    --white: #fff;
+    --black: #000;
+
+    --font-color: var(--black);
+
+    --primary-color: #fff;
+    --secondary-color: var(--black);
+    --tertiary-color: #13fc13;
+}
+
+/* Global */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+}
+
+::selection {
+    background: var(--secondary-color);
+    color: var(--primary-color); /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+    background: var(--secondary-color);
+    color: var(--primary-color); /* Gecko Browsers */
+}
+
+/* Typography */
+
+h1,h1,h3,h4,h5,h6,p {
+    color: var(--font-color);
+}
+
+h1,h2,h3 {
+    font-weight: 200;
+    line-height: 150%;
+}
+
+h1 {
+    letter-spacing: 4px;
+}
+
+h2 {
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+a {
+    color: var(--font-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.highlight {
+    background:var(--secondary-color);
+    color:var(--primary-color);
+    text-decoration: none;
+    padding: 0 1px;
+}
+
+.highlight a {
+    color:var(--primary-color);
+    text-decoration: none;
+}
+
+.highlight::selection {
+    background: var(--primary-color);
+    color: var(--secondary-color); /* WebKit/Blink Browsers */
+}
+.highlight::-moz-selection {
+    background: var(--primary-color);
+    color: var(--secondary-color); /* Gecko Browsers */
+}
+
+/* Images */
+
+#logo {
+    position: fixed;
+    top:8px;
+    left:8px;
+    height: 64px;
+    width: 64px;
+}
+
+/* Layout */
+
+section {
+    width: 100%;
+    display: table;
+    padding: 0 0 0 64px;
+    margin: 0;
+    max-width: none;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    min-height: 100vh;
+}
+
+section:first-of-type {
+    min-height:90vh;
+}
+
+.page {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+section:nth-of-type(2n) {
+    --tmp: var(--primary-color);
+    --primary-color: var(--black);
+    --secondary-color: var(--white);
+
+    --font-color: var(--white);
+}
+
+@media (max-width: 576px) {
+    .hidden-xs {
+        visibility: hidden;
+    }
+
+    section {
+        padding: 0;
+    }
+}
+
+footer {
+    min-height: 64px;
+    height: 64px;
+    background: var(--tertiary-color);
+}
+
+.footer-content {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Hero */
+
+#hero h1, #hero h2 {
+    display:inline;
+    font-size: 48px;
+    line-height: 150%;
+}
+
+/* Content */
+
+.project-list {
+    list-style: none;
+}
+
+.project-list li {
+    margin: 16px 0;
+    line-height: 150%;
+}
