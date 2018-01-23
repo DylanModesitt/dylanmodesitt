@@ -2,7 +2,7 @@
 
 // Colorize the footer
 
-var h=Math.random(),s=0.5,v=0.98,
+var h=Math.random(),s=0.80,v=0.80,
 golden_ratio_conjugate=0.618033988749895
 ,f,p,q,t,r,g,b;
 
@@ -54,8 +54,8 @@ if ( l > 0.179 ) {
 }
 
 // Set Footer Text
-
-document.getElementById("footer-text").innerHTML = "Copyright &copy; " + String(new Date().getFullYear()) + " Dylan Modesitt";
+var innerHTML = "Copyright &copy; " + String(new Date().getFullYear()) + " Dylan Modesitt. <a href='http://github.com/DylanModesitt/dylanmodesitt'>Code</a>";
+document.getElementById("footer-text").innerHTML = innerHTML;
 
 
 // Handle Logo Color Change
