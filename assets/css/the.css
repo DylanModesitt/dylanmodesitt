@@ -143,6 +143,10 @@ section:nth-of-type(2n) {
     section {
         padding: 0;
     }
+
+    .me p {
+        font-size: 16px;
+    }
 }
 
 footer {
